@@ -10,7 +10,38 @@
   text-align: center;
 }
 .registration-form{
+  width: 100%;
   font-weight: 800;
   margin-top: 20px;
   text-align: center;
+}
+.table {
+  border: 1px solid pink;
+  width: 100%;
+  background-color: antiquewhite;
+}
+.flex-container{
+  display: flex;
+  justify-content:  space-around;
+  align-items: center;
+}
+.flex-container > div {
+  width: 50px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+}
+.body{
+  background-color: aquamarine;
+}
+.button{
+  background-color: white;
+  border: 1 solid green;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 3px;
+}
+.button:hover{
+  background-color: #04AA6D;
+  color: white;
 }
