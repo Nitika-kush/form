@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function Form() {
-  const [formData,setFormData]=useState({name1:"",email:"",city:"",contact:"",address:""});
+  const [formData,setFormData]=useState({name:"",email:"",city:"",contact:"",address:""});
 
   const handleChange=(event)=>{
     const {name,value}=event.target
