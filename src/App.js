@@ -10,10 +10,7 @@ function App() {
  const [sortOrder, setSortOrder]=useState("asc");
 
   const addData = (data) => {
-    // const fullNameData={
-    //   fullName:`${data.fname} ${data.lname}`,
-    //  }
-    // console.log(fullNameData);
+   
     if(editIndex!==null){
       const updatedDataList =[...dataList];
       updatedDataList[editIndex]=data;
@@ -38,10 +35,10 @@ function App() {
   
   };
 
-  const sortByFullName=(fname)=>{
+  const sortByFullName=(data)=>{
     const sortedList=[...dataList].sort((a,b)=>{
-      const aFullName=a[fname];
-      const bFullName=b[fname];
+      const aFullName=a[data];
+      const bFullName=b[data];
       if(aFullName<bFullName) return sortOrder==="asc"?-1:1;
       if(aFullName>bFullName) return sortOrder==="asc"?1:-1;
       return 0;

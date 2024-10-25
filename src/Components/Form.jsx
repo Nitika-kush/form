@@ -55,7 +55,6 @@ function Form({ addData, currentData }) {
         fname: formData.fname.charAt(0).toUpperCase()+formData.fname.slice(1),
         lname: formData.lname.charAt(0).toUpperCase()+formData.lname.slice(1),
         city: formData.city.charAt(0).toUpperCase()+formData.city.slice(1),
-        gender: formData.fname.charAt(0).toUpperCase()+formData.fname.slice(1),
 
       }
       addData(capitalFormData);
@@ -164,9 +163,9 @@ function Form({ addData, currentData }) {
               value={formData.gender}
               onChange={handleChange}
             >
-              <option value="">select gender</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
+              <option disabled selected value="">select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
             </select>
             <p className="error">
               {errors.gender && <p>Gender must be filled</p>}
